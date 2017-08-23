@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tire Calulations</title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">The Tire Calulator</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Inch To Metric</a></li>
+                    <li><a href="#">Backspacing</a></li>
+                    <li><a href="#">Pictures/Comments</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <h1>Tire Size Calculations</h1>
+        <h2>All calculations needed for tire size changes</h2>
+    </div>
+    <div class="row"></div>
+    <div id="input-fields">
+        <div id="input1">
+            <div>Current Tire Size</div>
+            <input id="sectionWidth1" /> /
+            <input id="sectionHeight1" /> /R
+            <input id="rimSize1" />
+        </div>
+        <br />
+        <div id="input2">
+            <div>New Tire Size</div>
+            <input id="sectionWidth2" /> /
+            <input id="sectionHeight2" /> /R
+            <input id="rimSize2" />
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="ddlspeed">Speed</label>
+            <select class="form-group" id="ddlspeed">
+                <option>50</option>
+                <option>55</option>
+                <option>60</option>
+                <option>65</option>
+                <option>75</option>
+                <option>80</option>
+                <option>85</option>
+                <option>90</option>
+                <option>95</option>
+                <option>100</option>
+            </select>
+            <label for="odometerField">Miles Traveled:</label>
+            <input id="odometerField" />
+            <button id="BtnCalculate">Calculate Tires</button>
+        </div>
+    </div>
+    <br />
+    <div id="output-fields">
+        <h2>Changed Specifications</h2>
+        <br />
+
+        <table class="table table-hover table-striped">
+            <tr>
+                <th></th>
+                <th> Current Tire </th>
+                <th> New Tire </th>
+                <th> Difference </th>
+                <th> Percent Change </th>
+            </tr>
+            <tr>
+                <th>Diameter: </th>
+                <td id="diameter1">0</td>
+                <td id="diameter2">0</td>
+                <td id="diameterDifference">0</td>
+                <td id="diameterChangePercent">0</td>
+            </tr>
+            <tr>
+                <th>Sidewall Height: </th>
+                <td id="sidewall1">0</td>
+                <td id="sidewall2">0</td>
+                <td id="sidewallDifference">0</td>
+                <td id="sidewallChangePercent">0</td>
+            </tr>
+            <tr>
+                <th>Tire Width: </th>
+                <td id="width1">0</td>
+                <td id="width2">0</td>
+                <td id="widthDifference">0</td>
+                <td id="widthChangePercent">0</td>
+            </tr>
+            <tr>
+                <th>Circumference: </th>
+                <td id="circum1">0</td>
+                <td id="circum2">0</td>
+                <td id="circumDifference">0</td>
+                <td id="circumChangePercent">0</td>
+            </tr>
+            <tr>
+                <th>Revolutions Per Mile: </th>
+                <td id="revolutions1">0</td>
+                <td id="revolutions2">0</td>
+                <td id="revolutionsDifference">0</td>
+                <td id="revolutionsChangePercent">0</td>
+            </tr>
+            <tr>
+                <th>Miles Per Hour (MPH):</th>
+                <td id="mph1">0</td>
+                <td id="mph2">0</td>
+                <td id="mphDifference">0</td>
+                <td id="mphChangePercent">0</td>
+            </tr>
+            <tr>
+                <th>Change in Odometer Reading</th>
+                <td id="odometer1">0</td>
+                <td id="odometer2">0</td>
+                <td id="odometerDifference">0</td>
+                <td id="odometerChangePercent">0</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
